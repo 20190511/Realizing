@@ -1,4 +1,4 @@
-#1523 #1609 combination 구현 전
+#1523 ~ #1609 combination 구현 전
 #https://www.acmicpc.net/problem/15686
 from itertools import combinations
 def findChicken(maps):
@@ -60,3 +60,23 @@ for i in range (len(comb)):
 result = min(resultL)
 print(result)
 
+"""
+<< 피드백 >>
+   1. 순열 및 조합 알고리즘 사용 시 from itertools 를 활용한다.
+      ※ 해당 값 변경 가능
+      
+       a. 조합 : from itertools import combinations
+          val = list(combinations(lists, num))
+       b. 순열 : from itertools import permutations
+          val = list(permutations(lists,num))
+       C. 중복조합 : from itertools import combinations_with_replacement
+          val = list(combinations_with_replacement(lists,num))
+
+   2. 절대값의 경우에는 import 할 필요없이, abs() 해주면 된다.
+
+   3. 리스트에서 특정 값 개수 세주는 기능 ** 그냥 def 함수로 구현하는 것이 편할 수도 있다. (복잡한 겨우 사용)
+      from collections import Counter
+      counter = Counter([1,1,1,1,1,3,2,4])
+      print(Counter(1)) # 횟수 출력.
+
+"""
