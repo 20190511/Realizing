@@ -1,4 +1,5 @@
 #1523 #1609 combination 구현 전
+#https://www.acmicpc.net/problem/15686
 from itertools import combinations
 def findChicken(maps):
   size = len(maps)
